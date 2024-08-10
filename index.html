@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<body>
+  <div class="card">
+    <div class="frontPage">
+      <div class="bark">
+        <div class="container">
+          <h2 class="front-title">Happy Birthday,<br/> Trang Baby!</h2>
+          <img class="candles" src="assets/birthday-candles.png" alt="Candles" srcset="">
+          <img class="main-img" src="assets/trang.jpg" alt="Trang babi!" srcset="">
+        </div>
+      </div>
+    </div>
+    <div class="details">
+      <h4 class="card-title">Chúc mừng sinh nhật em yêu!</h2>
+      <h4 class="card-title">HAPPY BIRTHDAY!!!!!!</h3>
+      <p>Dear em yêu của anh,</p>
+      <p>Chúc em bé tuổi mới luôn luôn xinh đẹp nè, bớt lo âu và xì trét nhé!</p>
+      <p>Chúc bé sẽ gặp may mắn trong kỳ thi IELTS sắp tới đây,</p>
+      <p>Cùng với đó là may mắn và thành công trong sự nghiệp của em.</p>
+      <p>Cuối cùng là chúc bé yêu anh nhiều hơn năm ngoái nhé 😉</p>
+      <p class="text-right">🐻 của em ❤️</p>
+    </div>
+  </div>
+  <script>
+    const card = document.querySelector('.card')
+    card.addEventListener('click', () => {
+      if (card.classList.contains('open')) {
+        card.classList.remove('open')
+      } else {
+        card.classList.add('open')
+      }
+    })
+  </script>
+</body>
+</html>
